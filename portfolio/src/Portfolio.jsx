@@ -379,7 +379,7 @@ export default function Portfolio() {
 
                     <div className="project-list">
 
-                        div className="project-item">
+                        <div className="project-item">
                             <a
                                 href="#"
                                 target="_blank"
