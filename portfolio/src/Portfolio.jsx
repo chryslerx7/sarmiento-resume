@@ -424,13 +424,13 @@ export default function Portfolio() {
 
                         <div className="cert-item">
                             <a
-                                href=""
+                                href="https://www.credly.com/badges/cc6c24ae-202b-45fc-97d9-d1038d652f19/public_url"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cert-link"
                             >
-                                <h3 className="cert-title">Front End Development Libraries V8</h3>
-                                <p className="cert-org">freeCodeCamp</p>
+                                <h3 className="cert-title">IC3 Digital Literacy Certification</h3>
+                                <p className="cert-org">Certiport, a Pearson VUE Business</p>
                             </a>
                         </div>
 
