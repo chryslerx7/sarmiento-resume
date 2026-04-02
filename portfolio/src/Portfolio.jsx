@@ -379,6 +379,19 @@ export default function Portfolio() {
 
                     <div className="project-list">
 
+                        div className="project-item">
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                            >
+                                <h3 className="project-title">Backend</h3>
+                                <p className="project-desc">Coffee Shop POS System</p>
+                                <span className="project-tag">Using Java</span>
+                            </a>
+                        </div>
+
                         <div className="project-item">
                             <a
                                 href="#"
@@ -388,7 +401,7 @@ export default function Portfolio() {
                             >
                                 <h3 className="project-title">Full-Stack</h3>
                                 <p className="project-desc">Online Appointment System for School Records Office</p>
-                                <span className="project-tag"></span>
+                                <span className="project-tag">Using HTML, CSS, PHP, JAVASCRIPT</span>
                             </a>
                         </div>
 
