@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Portfolio />} />
+        <Route path="./Portfolio.jsx" element={<Portfolio />} />
       </Routes>
     </Router>
   );
