@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Portfolio from "./Portfolio.jsx";
+import Portfolio from "./portfolio";
 
 function App() {
   return (
