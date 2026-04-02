@@ -484,7 +484,7 @@ export default function Portfolio() {
                             </a>
 
                             <a className="connect-item" href="https://www.facebook.com/chryslerx.0/" target="_blank" rel="noopener noreferrer">
-                                <FaFacebook className="connect-icon" /> Facebook
+                                <FaFacebookMessenger className="connect-icon" /> Facebook
                             </a>
                         </div>
 
