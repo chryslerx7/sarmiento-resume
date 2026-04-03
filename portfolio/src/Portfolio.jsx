@@ -209,7 +209,7 @@ export default function Portfolio() {
                             <h3 className="category-title">Frameworks & Libraries</h3>
                             <div className="tag-group">
                                 <span className="tag">React.js (Vite)</span>
-                                <span className="tag">GSAP</span>
+                                <span className="tag">Node.js</span>
                             </div>
                         </div>
 
@@ -236,11 +236,14 @@ export default function Portfolio() {
                         </div>
 
                         <div className="tech-category">
-                            <h3 className="category-title">Graphic Design & Video Editing</h3>
+                            <h3 className="category-title">Foundational Skills</h3>
                             <div className="tag-group">
-                                <span className="tag">Canva</span>
-                                <span className="tag">Capcut</span>
-                                <span className="tag">Da Vinci Editor</span>
+                                <span className="tag">UI Design Basics</span>
+                                <span className="tag">API Integration(Learning)</span>
+                                <span className="tag">PHP(Intermediate)</span>
+                                <span className="tag">Python Learning</span>
+                                <span className="tag">Responsive Web Design</span>
+                                <span className="tag">AI Integration(Learning)</span>
                             </div>
                         </div>
 
