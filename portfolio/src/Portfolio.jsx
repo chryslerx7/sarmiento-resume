@@ -17,7 +17,7 @@ import { MdOutlineVerified } from "react-icons/md";
 import { MdOutlineDashboard } from "react-icons/md";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub, FaMobileAlt, FaFacebookMessenger, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaMobileAlt, FaFacebookMessenger, FaInstagram, FaFacebook, FaTiktok } from "react-icons/fa";
 import { GoPaperclip } from "react-icons/go";
 import { MdPhoneInTalk } from "react-icons/md";
 import ha from "./assets/gallery/ha.jpg";
@@ -500,7 +500,11 @@ export default function Portfolio() {
                             </a>
 
                             <a className="connect-item" href="https://www.facebook.com/chryslerx.0/" target="_blank" rel="noopener noreferrer">
-                                <FaFacebookMessenger className="connect-icon" /> Facebook
+                                <FaFacebook className="connect-icon" /> Facebook
+                            </a>
+
+                            <a className="connect-item" href="https://www.tiktok.com/@chryslrsrmnt_" target="_blank" rel="noopener noreferrer">
+                                <FaTiktok className="connect-icon" /> Tiktok
                             </a>
                         </div>
 
