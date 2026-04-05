@@ -384,14 +384,14 @@ export default function Portfolio() {
 
                         <div className="project-item">
                             <a
-                                href="#"
+                                href="https://github.com/chryslerx7/Coffee-POS-System"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="project-link"
                             >
                                 <h3 className="project-title">Backend</h3>
                                 <p className="project-desc">Coffee Shop POS System</p>
-                                <span className="project-tag">Using Java</span>
+                                <span className="project-tag">github.com/chryslerx7/Coffee-POS-System</span>
                             </a>
                         </div>
 
