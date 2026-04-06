@@ -397,14 +397,14 @@ export default function Portfolio() {
 
                         <div className="project-item">
                             <a
-                                href="#"
+                                href="https://github.com/chryslerx7/SPVAI-Appointment-System-for-School-Records"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="project-link"
                             >
                                 <h3 className="project-title">Full-Stack</h3>
                                 <p className="project-desc">Online Appointment System for School Records Office</p>
-                                <span className="project-tag">Using HTML, CSS, PHP, JAVASCRIPT</span>
+                                <span className="project-tag">github.com/chryslerx7/SPVAI-Appointment-System-for-School-Records</span>
                             </a>
                         </div>
 
