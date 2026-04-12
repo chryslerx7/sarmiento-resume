@@ -409,7 +409,7 @@ export default function Portfolio() {
 
                          <div className="project-item">
                             <a
-                                href="tech-it-easy.netlify.app"
+                                href="https://tech-it-easy.netlify.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="project-link"
