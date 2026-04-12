@@ -192,7 +192,6 @@ export default function Portfolio() {
                                 Tech Stack
                             </h2>
 
-
                         </div>
                         <div className="tech-category">
                             <h3 className="category-title">Frontend Development</h3>
