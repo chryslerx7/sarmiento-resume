@@ -408,6 +408,19 @@ export default function Portfolio() {
                             </a>
                         </div>
 
+                         <div className="project-item">
+                            <a
+                                href="tech-it-easy.netlify.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                            >
+                                <h3 className="project-title">Full-Stack</h3>
+                                <p className="project-desc">Tech IT Easy (E-Commerce Website) </p>
+                                <span className="project-tag">Tech-IT-Easy.netlify.app</span>
+                            </a>
+                        </div>
+
                     </div>
 
 
