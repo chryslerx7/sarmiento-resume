@@ -209,6 +209,7 @@ export default function Portfolio() {
                             <div className="tag-group">
                                 <span className="tag">React.js (Vite)</span>
                                 <span className="tag">Node.js</span>
+                                <span className="tag">Laravel(Learning)</span>
                             </div>
                         </div>
 
@@ -218,7 +219,7 @@ export default function Portfolio() {
                                 <span className="tag">PHP</span>
                                 <span className="tag">MySQL</span>
                                 <span className="tag">JAVA</span>
-                                <span className="tag"></span>
+                               
 
                             </div>
                         </div>
