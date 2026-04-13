@@ -218,6 +218,7 @@ export default function Portfolio() {
                                 <span className="tag">PHP</span>
                                 <span className="tag">MySQL</span>
                                 <span className="tag">JAVA</span>
+                                <span className="tag"></span>
 
                             </div>
                         </div>
