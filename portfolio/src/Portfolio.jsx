@@ -209,7 +209,7 @@ export default function Portfolio() {
                             <div className="tag-group">
                                 <span className="tag">React.js (Vite)</span>
                                 <span className="tag">Node.js</span>
-                                <span className="tag">Laravel(Learning)</span>
+                                <span className="tag">Laravel (Learning)</span>
                             </div>
                         </div>
 
@@ -219,7 +219,6 @@ export default function Portfolio() {
                                 <span className="tag">PHP</span>
                                 <span className="tag">MySQL</span>
                                 <span className="tag">JAVA</span>
-                               
 
                             </div>
                         </div>
@@ -301,7 +300,7 @@ export default function Portfolio() {
                             <div className="exp-item" >
                                 <div className="exp-dot"></div>
                                 <div className="exp-content">
-                                    <h3 className="exp-title">Frontend Developer Intern</h3>
+                                    <h3 className="exp-title">Full-Stack Developer Intern</h3>
                                     <p className="exp-company">
                                         Certicode
                                     </p>
@@ -324,8 +323,6 @@ export default function Portfolio() {
 
                             {/* BRANDING & COLLABORATION */}
                             
-
-
                             {/* CLOCKEDIN – ADDED */}
                             
                             {/* TECH STACK */}
@@ -349,7 +346,7 @@ export default function Portfolio() {
                                 <div className="exp-content">
                                     <h3 className="exp-title">Programming Foundations</h3>
                                     <p className="exp-company">
-                                        Self-learning, online courses, mini-projects
+                                        Self-learning, Online courses, Mini-Projects
                                     </p>
                                 </div>
                                 <span className="exp-year">2024</span>
@@ -362,7 +359,7 @@ export default function Portfolio() {
                                     <h3 className="exp-title">
                                         Hello World! <PiHandWaving className="wave-icon" />
                                     </h3>
-                                    <p className="exp-company">Started learning programming</p>
+                                    <p className="exp-company">Started Learning Programming</p>
                                 </div>
                                 <span className="exp-year">2022</span>
                             </div>
@@ -439,6 +436,18 @@ export default function Portfolio() {
 
                     <div className="cert-list">
 
+                         <div className="cert-item">
+                            <a
+                                href="https://www.credly.com/badges/a325088c-81f7-40b1-a4b4-10f3ad937298/public_url"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cert-link"
+                            >
+                                <h3 className="cert-title">IT Specialist - Java Certification</h3>
+                                <p className="cert-org">Certiport, a Pearson VUE business</p>
+                            </a>
+                        </div>
+
                         <div className="cert-item">
                             <a
                                 href="https://www.credly.com/badges/cc6c24ae-202b-45fc-97d9-d1038d652f19/public_url"
@@ -448,18 +457,6 @@ export default function Portfolio() {
                             >
                                 <h3 className="cert-title">IC3 Digital Literacy Certification</h3>
                                 <p className="cert-org">Certiport, a Pearson VUE Business</p>
-                            </a>
-                        </div>
-
-                        <div className="cert-item">
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cert-link"
-                            >
-                                <h3 className="cert-title">Legacy Responsive Web Design V8</h3>
-                                <p className="cert-org">freeCodeCamp</p>
                             </a>
                         </div>
 
