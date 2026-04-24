@@ -467,8 +467,8 @@ export default function Portfolio() {
                                 rel="noopener noreferrer"
                                 className="cert-link"
                             >
-                                <h3 className="cert-title">JavaScript</h3>
-                                <p className="cert-org">freeCodeCamp</p>
+                                <h3 className="cert-title">Network Defense</h3>
+                                <p className="cert-org">Cisco Networking Academy</p>
                             </a>
                         </div>
 
