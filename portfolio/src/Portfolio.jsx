@@ -17,7 +17,7 @@ import { MdOutlineVerified } from "react-icons/md";
 import { MdOutlineDashboard } from "react-icons/md";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub, FaMobileAlt, FaFacebookMessenger, FaInstagram, FaFacebook, FaTiktok } from "react-icons/fa";
+import { FaGithub, FaMobileAlt, FaFacebookMessenger, FaInstagram, FaFacebook, FaTiktok, FaFreeCodeCamp } from "react-icons/fa";
 import { GoPaperclip } from "react-icons/go";
 import { MdPhoneInTalk } from "react-icons/md";
 import ha from "./assets/gallery/ha.jpg";
@@ -516,6 +516,11 @@ export default function Portfolio() {
 
                             <a className="connect-item" href="https://www.tiktok.com/@chryslrsrmnt_" target="_blank" rel="noopener noreferrer">
                                 <FaTiktok className="connect-icon" /> Tiktok
+                            </a>
+
+                            <a classname="connect-item" href="https://www.freecodecamp.org/chryslerx_8" target="_blank" rel="noopener noreferrer">
+                                <FaFreeCodeCamp className="connect-icon" /> FreeCodeCamp
+                            
                             </a>
                         </div>
 
