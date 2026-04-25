@@ -518,10 +518,6 @@ export default function Portfolio() {
                                 <FaTiktok className="connect-icon" /> Tiktok
                             </a>
 
-                            <a classname="connect-item" href="https://www.freecodecamp.org/chryslerx_8" target="_blank" rel="noopener noreferrer">
-                                <FaFreeCodeCamp className="connect-icon" /> FreeCodeCamp
-                            
-                            </a>
                         </div>
 
 
