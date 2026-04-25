@@ -1008,25 +1008,25 @@ export const patterns = [
         response: {
          en: [
   "Here are my earned certifications 👇🏻\n\n" +
-  "📌 IT Specialist — Device Configuration & Management\n" +
+  "📌 IT Specialist — Java \n" +
   "🔗 Issued by Certiport (A Pearson VUE Business)\n\n" +
 
-  "📌 Front End Development Libraries (V8)\n" +
-  "🔗 https://freecodecamp.org/certification/klntaglr/front-end-development-libraries\n\n" +
+  "📌 IC3 Digital Literacy Certification GS6 Level 1\n" +
+  "🔗 Issued by Certiport (A Pearson VUE business)\n\n" +
 
-  "📌 Legacy Responsive Web Design (V8)\n" +
-  "🔗 https://freecodecamp.org/certification/klntaglr/responsive-web-design"
+  "📌 Network Defense\n" +
+  "🔗 Issued by Cisco Networking Academy \n\n"
 ],
 tl: [
   "Narito ang aking mga nakuha na certifications 👇🏻\n\n" +
-  "📌 IT Specialist — Device Configuration & Management\n" +
+  "📌 IT Specialist — Java\n" +
   "🔗 Ibinigay ng Certiport (A Pearson VUE Business)\n\n" +
 
-  "📌 Front End Development Libraries (V8)\n" +
-  "🔗 https://freecodecamp.org/certification/klntaglr/front-end-development-libraries\n\n" +
+  "📌 IC3 Digital Literacy Certification GS6 Level 1\n" +
+  "🔗 Ibinigay ng Certiport (A Pearson VUE business)\n\n" +
 
-  "📌 Legacy Responsive Web Design (V8)\n" +
-  "🔗 https://freecodecamp.org/certification/klntaglr/responsive-web-design"
+  "📌 Network Defense\n" +
+  "🔗 Ibinigay ng Cisco Networking Academy\n\n"
 ]
 
         },

@@ -35,7 +35,7 @@ Topics allowed:
 - Chrysler’s skills: HTML, CSS, JavaScript, React, Tailwind, PHP, Java, Flutter
 - Portfolio projects: Portfolio 
 - Education: BPSU, 1st Year BSIT
-- Certifications: freeCodeCamp, Certiport
+- Certifications: freeCodeCamp, Certiport, Cisco NetAcad
 - Internship goals: Web/Mobile Dev
 
 If unrelated → politely redirect (same language).
