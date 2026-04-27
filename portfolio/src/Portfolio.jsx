@@ -462,13 +462,25 @@ export default function Portfolio() {
 
                         <div className="cert-item">
                             <a
-                                href="https://www.freecodecamp.org/certification/klntaglr/javascript-v9"
+                                href="https://www.credly.com/badges/ff8adf9a-1d6c-43c8-9660-b1219d31b1b3/public_url"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="cert-link"
                             >
                                 <h3 className="cert-title">Network Defense</h3>
                                 <p className="cert-org">Cisco Networking Academy</p>
+                            </a>
+                        </div>
+
+                        <div className="cert-item">
+                            <a
+                                href="https://www.credly.com/badges/23d84b25-6aed-47bf-9541-10e0ed809495/public_url"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="cert-link"
+                            >
+                                <h3 className="cert-title">Critical Career Skills - Professional Communication</h3>
+                                <p className="cert-org">Certiport, a Pearson VUE business</p>
                             </a>
                         </div>
 

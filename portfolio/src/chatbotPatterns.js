@@ -1015,7 +1015,10 @@ export const patterns = [
   "🔗 Issued by Certiport (A Pearson VUE business)\n\n" +
 
   "📌 Network Defense\n" +
-  "🔗 Issued by Cisco Networking Academy \n\n"
+  "🔗 Issued by Cisco Networking Academy \n\n" +
+
+  "📌 Critical Career Skills - Professional Communication\n" +
+  "🔗 Issued by Certiport (A Pearson VUE business) \n\n"
 ],
 tl: [
   "Narito ang aking mga nakuha na certifications 👇🏻\n\n" +
@@ -1026,7 +1029,10 @@ tl: [
   "🔗 Ibinigay ng Certiport (A Pearson VUE business)\n\n" +
 
   "📌 Network Defense\n" +
-  "🔗 Ibinigay ng Cisco Networking Academy\n\n"
+  "🔗 Ibinigay ng Cisco Networking Academy\n\n" +
+
+  "📌 Critical Career Skills - Professional Communication\n" +
+  "🔗 Issued by Certiport (A Pearson VUE business) \n\n"
 ]
 
         },
