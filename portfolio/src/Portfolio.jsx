@@ -29,7 +29,7 @@ import ha7 from "./assets/gallery/1.jpg";
 import ha5 from "./assets/gallery/ha5.jpg";
 import ha6 from "./assets/gallery/ako.jpg";
 import { FaLaptopCode } from "react-icons/fa";
-import resumePDF from "./assets/resume.pdf";
+import resumePDF from "./assets/JCS-Resume.pdf";
 import { PiHandWaving } from "react-icons/pi";
 import ChatbotPortfolio from "./ChatbotPortfolio";
 
