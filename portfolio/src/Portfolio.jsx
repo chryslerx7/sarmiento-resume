@@ -419,6 +419,19 @@ export default function Portfolio() {
                             </a>
                         </div>
 
+                        <div className="project-item">
+                            <a
+                                href="https://github.com/chryslerx7/Indie-Game-SoloShoot"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                            >
+                                <h3 className="project-title">Game Developer</h3>
+                                <p className="project-desc">SoloShoot (Java Based Indie Game) </p>
+                                <span className="project-tag">github.com/chryslerx7/Indie-Game-SoloShoot</span>
+                            </a>
+                        </div>
+
                     </div>
 
 
