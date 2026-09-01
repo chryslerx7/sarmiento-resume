@@ -200,7 +200,7 @@ export default function Portfolio() {
                                 <span className="tag">CSS3</span>
                                 <span className="tag">JavaScript</span>
                                 <span className="tag">Responsive Web Design</span>
-                                <span className="tag">Component-Based UI</span>
+                                <span className="tag">Cursor</span>
                             </div>
                         </div>
 
@@ -231,7 +231,9 @@ export default function Portfolio() {
                                 <span className="tag">Figma</span>
                                 <span className="tag">Visual Studio</span>
                                 <span className="tag">Eclipse</span>
-                                <span className="tag">Netbeans</span>
+                                <span className="tag">Codex</span>
+                                <span className="tag">Mobbin</span>
+                                <span className="tag">Trello</span>
                             </div>
                         </div>
 
@@ -379,6 +381,19 @@ export default function Portfolio() {
                     </div>
 
                     <div className="project-list">
+
+                        <div className="project-item">
+                            <a
+                                href="https://github.com/chryslerx7/FoundIT"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                            >
+                                <h3 className="project-title">Full Stack</h3>
+                                <p className="project-desc">FoundIT v1.0.0</p>
+                                <span className="project-tag">A Campus Based Lost and Found Platform</span>
+                            </a>
+                        </div>
 
                         <div className="project-item">
                             <a
