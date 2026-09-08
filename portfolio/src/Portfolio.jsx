@@ -384,7 +384,7 @@ export default function Portfolio() {
 
                         <div className="project-item">
                             <a
-                                href="https://github.com/chryslerx7/FoundIT"
+                                href="https://found-it-landing-page.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="project-link"
