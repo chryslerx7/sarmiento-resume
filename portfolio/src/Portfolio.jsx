@@ -393,6 +393,19 @@ export default function Portfolio() {
                                 <p className="project-desc">FoundIT v1.0.0</p>
                                 <span className="project-tag">A Campus Based Lost and Found Platform</span>
                             </a>
+                        </div> 
+
+                        <div className="project-item">
+                            <a
+                                href="https://cpu-scheduler-landing-page.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                            >
+                                <h3 className="project-title">Full Stack</h3>
+                                <p className="project-desc">Prcoess-Scheduling-Solver v1.0.1</p>
+                                <span className="project-tag">An Application for solving CPU Processes Schedule's, best for Operating System Student's</span>
+                            </a>
                         </div>
 
                         <div className="project-item">
