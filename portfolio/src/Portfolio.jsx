@@ -403,7 +403,7 @@ export default function Portfolio() {
                                 className="project-link"
                             >
                                 <h3 className="project-title">Full Stack</h3>
-                                <p className="project-desc">Prcoess-Scheduling-Solver v1.0.1</p>
+                                <p className="project-desc">Process-Scheduling-Solver v1.0.1</p>
                                 <span className="project-tag">An Application for solving CPU Processes Schedule's, best for Operating System Student's</span>
                             </a>
                         </div>
