@@ -390,7 +390,7 @@ export default function Portfolio() {
                                 className="project-link"
                             >
                                 <h3 className="project-title">Full Stack</h3>
-                                <p className="project-desc">FoundIT v1.0.0</p>
+                                <p className="project-desc">FoundIT v1.1.2</p>
                                 <span className="project-tag">A Campus Based Lost and Found Platform</span>
                             </a>
                         </div> 
