@@ -119,17 +119,24 @@
 /* Horizontal scroll keeps narrow screens usable without breaking page layout.
    The scrollbar itself is hidden on every engine, while wheel / trackpad /
    touch scrolling keeps working and content stays clipped to this container.
-   Scoped to `.gh-contrib-scroll`, so no other portfolio section is affected. */
+   Scoped to `.gh-contrib-scroll`, so no other portfolio section is affected.
+   NOTE: the WebKit scrollbar is sized to zero rather than `display: none` —
+   `display: none` on `::-webkit-scrollbar` is known to make the element
+   unscrollable in WebKit/Safari (dead touch swipe), while a zero-size
+   scrollbar stays invisible everywhere and preserves native scrolling. */
 .gh-contrib-scroll {
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* legacy Edge */
+  -webkit-overflow-scrolling: touch; /* momentum touch scrolling on iOS */
   padding-top: 32px; /* room for first-row tooltips so they are not clipped */
   padding-bottom: 4px;
 }
 
 .gh-contrib-scroll::-webkit-scrollbar {
-  display: none; /* Chrome, Edge, Safari */
+  width: 0; /* Chrome, Edge, Safari */
+  height: 0;
+  background: transparent;
 }
 
 .gh-cal {
