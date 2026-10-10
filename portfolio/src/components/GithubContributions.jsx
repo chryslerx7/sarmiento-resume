@@ -5,7 +5,8 @@ import "./GithubContributions.css";
 const USERNAME = "chryslerx7";
 const PROFILE_URL = "https://github.com/chryslerx7";
 const STORAGE_PREFIX = "gh-cal:";
-const TTL_CURRENT_YEAR_MS = 60 * 60 * 1000; // 1h
+const TTL_CURRENT_YEAR_MS = 15 * 60 * 1000; // 15m — the current year still
+// changes, so keep this short; the server/edge caches shield GitHub upstream.
 const TTL_PAST_YEAR_MS = 24 * 60 * 60 * 1000; // 24h
 const WEEKDAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -100,6 +101,22 @@ export default function GithubContributions() {
     setRetryCount((n) => n + 1);
   }
 
+  function handleRefresh() {
+    // Manual refresh: drop this year's local snapshot, then refetch through
+    // the existing retry path (retryCount > 0 bypasses the local cache).
+    // Server/edge TTLs still shield GitHub upstream — this never
+    // force-fetches from GitHub directly and issues no extra background
+    // requests (no polling, no prefetch).
+    try {
+      window.localStorage.removeItem(STORAGE_PREFIX + selectedYear);
+    } catch {
+      // Storage may be unavailable; the fetch proceeds without cache anyway.
+    }
+    setStatus("loading");
+    setErrorMessage("");
+    setRetryCount((n) => n + 1);
+  }
+
   useEffect(() => {
     // Skip the network request when fresh cache for this year is already
     // rendered (set via the lazy initializer or handleYearChange above).
@@ -161,27 +178,39 @@ export default function GithubContributions() {
           <FaGithub className="section-icon" aria-hidden="true" />
           GitHub Contributions
         </h2>
-        {years.length > 1 ? (
-          <label className="gh-year-label">
-            <span className="gh-year-text">Year</span>
-            <select
-              className="gh-year"
-              aria-label="Select contribution year"
-              value={selectedYear}
-              onChange={(e) => handleYearChange(Number(e.target.value))}
-            >
-              {years.map((year) => (
-                <option key={year} value={year}>
-                  {year}
-                </option>
-              ))}
-            </select>
-          </label>
-        ) : (
-          <span className="gh-year-static" aria-label={`Year ${selectedYear}`}>
-            {selectedYear}
-          </span>
-        )}
+        <div className="gh-head-side">
+          {years.length > 1 ? (
+            <label className="gh-year-label">
+              <span className="gh-year-text">Year</span>
+              <select
+                className="gh-year"
+                aria-label="Select contribution year"
+                value={selectedYear}
+                onChange={(e) => handleYearChange(Number(e.target.value))}
+              >
+                {years.map((year) => (
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : (
+            <span className="gh-year-static" aria-label={`Year ${selectedYear}`}>
+              {selectedYear}
+            </span>
+          )}
+          <button
+            type="button"
+            className="gh-refresh"
+            onClick={handleRefresh}
+            disabled={status === "loading"}
+            aria-label="Refresh contribution data"
+            title="Refresh contribution data"
+          >
+            Refresh
+          </button>
+        </div>
       </div>
 
       <p className="gh-contrib-sub">

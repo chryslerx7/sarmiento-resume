@@ -81,6 +81,14 @@ export default async function handler(req, res) {
   }
 
   const token = process.env.GITHUB_TOKEN;
+
+  // The current year is still changing: let the edge revalidate it every
+  // 10 minutes so manual refreshes surface new contributions promptly.
+  // Past years are immutable, so they keep the 1h edge TTL. Either way the
+  // per-instance memory cache plus tiny traffic keep GitHub upstream load
+  // negligible (no polling, no cache-busters anywhere).
+  const edgeMaxAge = year === currentYear ? 600 : 3600;
+
   if (!token) {
     // Generic message on purpose: never hint at which secret is missing.
     console.error("github api: integration unavailable");
@@ -91,7 +99,7 @@ export default async function handler(req, res) {
   if (hit && hit.expiresAt > Date.now()) {
     res.setHeader(
       "Cache-Control",
-      "public, s-maxage=3600, stale-while-revalidate=86400"
+      `public, s-maxage=${edgeMaxAge}, stale-while-revalidate=86400`
     );
     return res.status(200).json({ ...hit.payload, cached: true });
   }
@@ -210,7 +218,7 @@ export default async function handler(req, res) {
 
   res.setHeader(
     "Cache-Control",
-    "public, s-maxage=3600, stale-while-revalidate=86400"
+    `public, s-maxage=${edgeMaxAge}, stale-while-revalidate=86400`
   );
   return res.status(200).json(payload);
 }
