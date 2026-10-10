@@ -16,6 +16,7 @@
   --gh-text: #1c1e21;
   --gh-muted: #65676b;
   --gh-border: #e4e6eb;
+  --gh-field-bg: #ffffff;
   --gh-tip-bg: #1c1e21;
   --gh-tip-text: #ffffff;
 }
@@ -29,6 +30,7 @@
   --gh-text: #e6edf3;
   --gh-muted: #848d97;
   --gh-border: #30363d;
+  --gh-field-bg: #161b22;
   --gh-tip-bg: #e6edf3;
   --gh-tip-text: #0d1117;
 }
@@ -62,11 +64,33 @@
   font-size: 13px;
   font-weight: 600;
   color: var(--gh-text);
-  background: transparent;
+  background-color: var(--gh-field-bg);
   border: 1px solid var(--gh-border);
   border-radius: 6px;
   padding: 5px 8px;
   cursor: pointer;
+  /* Light popup (control face, arrow, option list) in light mode. The dark
+     override below flips this so the OS/browser-rendered menu follows the
+     portfolio theme in Chrome, Edge, and Firefox. */
+  color-scheme: light;
+}
+
+.gh-year:hover {
+  border-color: var(--gh-muted);
+}
+
+.gh-year:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.gh-year option {
+  background-color: var(--gh-field-bg);
+  color: var(--gh-text);
+}
+
+.container.dark-mode .gh-contrib .gh-year {
+  color-scheme: dark;
 }
 
 .gh-year-static {
@@ -92,11 +116,20 @@
   text-underline-offset: 2px;
 }
 
-/* Horizontal scroll keeps narrow screens usable without breaking page layout. */
+/* Horizontal scroll keeps narrow screens usable without breaking page layout.
+   The scrollbar itself is hidden on every engine, while wheel / trackpad /
+   touch scrolling keeps working and content stays clipped to this container.
+   Scoped to `.gh-contrib-scroll`, so no other portfolio section is affected. */
 .gh-contrib-scroll {
   overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* legacy Edge */
   padding-top: 32px; /* room for first-row tooltips so they are not clipped */
   padding-bottom: 4px;
+}
+
+.gh-contrib-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
 }
 
 .gh-cal {
