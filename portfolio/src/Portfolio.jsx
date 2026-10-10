@@ -32,6 +32,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import resumePDF from "./assets/JCS-Resume.pdf";
 import { PiHandWaving } from "react-icons/pi";
 import ChatbotPortfolio from "./ChatbotPortfolio";
+import GithubContributions from "./components/GithubContributions";
 
 export default function Portfolio() {
     const [darkMode, setDarkMode] = useState(false);
@@ -641,6 +642,9 @@ export default function Portfolio() {
                 </section>
 
             </div>
+
+            {/* GITHUB CONTRIBUTIONS */}
+            <GithubContributions />
 
             <section className="card connect-container gallery-section">
                 <h2 className="section-title"><FaRegImage className="icon" />Gallery</h2>
