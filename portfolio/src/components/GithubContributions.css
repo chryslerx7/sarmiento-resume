@@ -99,39 +99,6 @@
   color: var(--gh-muted);
 }
 
-.gh-head-side {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.gh-refresh {
-  font: inherit;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--gh-muted);
-  background: transparent;
-  border: 1px solid var(--gh-border);
-  border-radius: 6px;
-  padding: 5px 9px;
-  cursor: pointer;
-}
-
-.gh-refresh:hover:not(:disabled) {
-  color: var(--gh-text);
-  border-color: var(--gh-muted);
-}
-
-.gh-refresh:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-}
-
-.gh-refresh:disabled {
-  opacity: 0.55;
-  cursor: default;
-}
-
 .gh-contrib-sub {
   display: flex;
   flex-wrap: wrap;
